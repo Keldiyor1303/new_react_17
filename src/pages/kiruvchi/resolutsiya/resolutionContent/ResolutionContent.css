@@ -1,0 +1,37 @@
+
+.input-border{
+    border:1px solid lightgray;
+    border-radius:5px;
+    padding:0px 16px;
+}
+.input-border:active{
+    border:1px solid #0056B8;
+}
+
+.input-border .first{
+    margin-left:20px;
+    width:40% !important;
+}
+.second{
+    margin-left:5px;
+    width:59% !important;
+    padding-left:5px;
+}
+
+
+.input-border input{
+    border:none !important;
+    width:49% !important;
+    outline:none;
+
+}
+
+
+.input-border input::after, .input-border input::before {
+    display: none;
+}
+
+#qisqacha2{
+    width: 100% !important;
+}
+

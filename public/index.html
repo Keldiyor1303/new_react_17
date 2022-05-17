@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <!-- <meta http-equiv="X-Frame-Options" content="SAMEORIGIN"> -->
+  <!-- fontawesomes google material -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="/style/style.css" type="text/css">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <!-- Global stylesheets -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+  <link href="/style/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
+  <link href="/style/assets/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Core JS files -->
+  <script src="/style/js/main/jquery.min.js"></script>
+  <script src="/style/js/main/bootstrap.bundle.min.js"></script>
+  <!-- table -->
+  <!-- <link rel="stylesheet" href="/style/table/css/footable.bootstrap.css"> -->
+  <!-- <link rel="stylesheet" href="/style/table/css/footable.bootstrap.min.css"> -->
+
+  <link rel="stylesheet" href="/style/material/material1.css">
+  <link rel="stylesheet" href="/style/material/material2.css">
+  <link rel="stylesheet" href="/style/material/material3.css">
+  <link rel="stylesheet" href="/style/material/material4.css">
+
+  <!-- Theme JS files -->
+  <!-- <script src="/style/js/plugins/visualization/d3/d3.min.js"></script> -->
+  <!-- <script src="/style/js/plugins/visualization/d3/d3_tooltip.js"></script> -->
+
+  <!-- <script src="/style/js/plugins/ui/moment/moment.min.js"></script> -->
+  <!-- <script src="/style/js/plugins/pickers/daterangepicker.js"></script> -->
+  <!-- <script src="/style/js/plugins/ui/prism.min.js"></script> -->
+  <!-- <script src="/style/js/demo_pages/dashboard.js"></script> -->
+  <!-- <script src="/style/js/demo_charts/pages/dashboard/light/streamgraph.js"></script> -->
+  <!-- /theme JS files -->
+  <script src="/style/assets/js/app.js"></script>
+  <!-- multi selec../t js files -->
+  <!-- <script src="/style/js/plugins/notifications/pnotify.min.js"></script> -->
+  <!-- <script src="/style/js/plugins/forms/selects/bootstrap_multiselect.js"></script> -->
+  <!-- <script src="/style/js/demo_pages/form_multiselect.js"></script> -->
+  <!-- slect js files -->
+  <!-- <script src="/style/js/plugins/forms/selects/select2.min.js"></script> -->
+  <!-- <script src="/style/js/demo_pages/form_layouts.js"></script> -->
+  <!-- <script src="/style/js/plugins/extensions/jquery_ui/interactions.min.js"></script> -->
+  <!-- <script type="text/javascript" src="/style/js/demo_pages/form_select2.js"></script> -->
+
+  <!-- date table ../API js files -->
+  <!-- <script src="/style/js/plugins/tables/datatables/datatables.min.js"></script> -->
+  <!-- <script src="/style/js/plugins/tables/datatables/extensions/select.min.js"></script> -->
+  <!-- <script src="/style/js/plugins/tables/datatables/extensions/buttons.min.js"></script> -->
+  <!-- <script src="/style/js/demo_pages/datatables_extension_select.js"></script> -->
+
+
+  <!-- tooltips -->
+  <!-- <script src="/style/js/demo_pages/components_popups.js"></script> -->
+
+  <!-- calendar js files -->
+  <!-- <script src="/style/js/plugins/ui/moment/moment.min.js"></script>
+  <script src="/style/js/plugins/pickers/daterangepicker.js"></script>
+  <script src="/style/js/plugins/pickers/pickadate/picker.js"></script>
+  <script src="/style/js/plugins/pickers/pickadate/picker.date.js"></script>
+  <script src="/style/js/plugins/pickers/pickadate/picker.time.js"></script>
+  <script src="/style/js/plugins/pickers/pickadate/legacy.js"></script>
+  <script src="/style/js/plugins/notifications/jgrowl.min.js"></script>
+  <script src="/style/js/demo_pages/picker_date.js"></script> -->
+
+  <!-- table -->
+  <!-- <script src="/style/table/js/footable.js"></script> -->
+  <!-- <script src="/style/table/js/footable.min.js"></script> -->
+
+
+  <!-- accordion js files -->
+  <!-- <script src="/style/js/plugins/ui/dragula.min.js"></script> -->
+  <!-- <script src="/style/js/demo_pages/components_collapsible.js"></script> -->
+
+  <!-- <script src="/style/js/plugins/forms/inputs/autosize.min.js"></script> -->
+  <script src="/style/js/plugins/forms/inputs/formatter.min.js"></script>
+  <script src="/style/js/plugins/forms/inputs/inputmask.js"></script>
+  <!-- <script src="style/js/plugins/forms/inputs/typeahead/typeahead.bundle.min.js"></script> -->
+  <!-- <script src="/style/js/plugins/forms/inputs/typeahead/handlebars.min.js"></script> -->
+  <!-- <script src="/style/js/plugins/forms/inputs/passy.js"></script> -->
+  <script src="/style/js/plugins/forms/inputs/maxlength.min.js"></script>
+  <!-- <script src="/style/js/demo_pages/form_controls_extended.js"></script> -->
+
+  <!-- accordion js files -->
+  <!-- <script type="text/javascript" src="/style/js/plugins/ui/dragula.min.js"></script> -->
+  <script type="text/javascript" src="/style/js/demo_pages/components_collapsible.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/gh/linways/table-to-excel@v1.0.4/dist/tableToExcel.js"></script>
+
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .multiselect {
+      padding: 1rem;
+    }
+
+    .NavLink {
+      border-top-right-radius: 0px;
+      border-top-left-radius: 0px;
+    }
+
+    /* selectdagi vertical chiziqni yo'qotish */
+    .css-1okebmr-indicatorSeparator {
+      display: none;
+    }
+
+    /* select ustiga bosganda balandligini bir xil qilish */
+    .css-1pahdxg-control {
+      height: 56px;
+    }
+
+    /* select balandligi */
+    .css-1s2u09g-control {
+      width: 100%;
+      height: 56px !important;
+    }
+
+    /* select balandligi */
+    .css-1insrsq-control {
+      width: 100%;
+      height: 56px !important;
+    }
+
+    #js-licensing {
+      display: none;
+    }
+
+    /* selectni bosganda element tagiga qolmasligi uchun */
+    #react-select-21-listbox {
+      position: inherit;
+      z-index: 999 !important;
+    }
+
+    .css-2613qy-menu {
+      position: inherit;
+      z-index: 999 !important;
+    }
+
+    .adminWindow {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .3));
+      z-index: 999;
+    }
+
+    .alert {
+      position: fixed;
+      top: 70px;
+      left: 0;
+      right: 0;
+      width: 25%;
+      z-index: 99999 !important;
+      margin: auto;
+    }
+
+    .alertNotice {
+      position: fixed;
+      top: 70px;
+      left: 0;
+      right: 0;
+      z-index: 999999 !important;
+      margin: auto;
+    }
+
+    /* scroll ni uzunligini o'zgartirish */
+    ::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    .XodimBajaruvchi .css-26l3qy-menu,
+    .col1QaytaIjro .css-26l3qy-menu {
+      width: 350px !important;
+      z-index: 999 !important;
+    }
+
+    .css-26l3qy-menu {
+      z-index: 999 !important;
+      margin-bottom: 20px;
+    }
+
+    .badge {
+      font-weight: bold;
+    }
+
+    /* input uchun */
+    .adminSozlamaInput {
+      padding: 5px;
+      border: none !important;
+      background-color: transparent;
+      width: 70px;
+    }
+    .react-numeric-input {
+      border: none !important;
+    }
+    .react-numeric-input b {
+      display: none !important;
+    }
+
+    .adminSozlamaInput:hover {
+      border-bottom: 1px solid crimson !important;
+    }
+    .adminSozlamaInput:focus {
+      outline: none !important;
+      border: 1px solid crimson !important;
+      border-radius: 2px !important;
+    }
+
+    @media (max-width: 1500px) {
+      .page-content {
+        height: 90% !important;
+      }
+    }
+
+    @media (max-width: 1200px) {
+      .page-content {
+        height: 85% !important;
+      }
+    }
+  </style>
+  <title>d-doc.uz</title>
+</head>
+
+<!-- oncontextmenu="return false" -->
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+
+</body>
+<script src="//code-eu1.jivosite.com/widget/y3zl3qRXjp" async></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- e-imzo -> o'chirilmasin (taqiqlanadi)--> 
+<!-- <script src="http://dls.yt.uz/e-imzo.js"></script>
+<script src="http://dls.yt.uz/e-imzo-client.js"></script>
+<script src="/style/js/eimzo.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script> -->
+
+</html>
